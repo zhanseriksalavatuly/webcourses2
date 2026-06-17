@@ -1,0 +1,158 @@
+<?php include 'config.php'; ?>
+<?php include 'header.php'; ?>
+
+<style>
+body {
+    background:#0b0f19;
+    color:white;
+    font-family:Arial;
+}
+
+.container {
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* HERO */
+.hero {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:80px 20px;
+}
+
+.hero h1 {
+    font-size:44px;
+    margin-bottom:15px;
+}
+
+.hero p {
+    color:#9ca3af;
+    font-size:18px;
+}
+
+.btn {
+    padding:12px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.btn-blue {background:#2563eb;color:white;}
+.btn-green {background:#10b981;color:white;}
+
+/* BLOCKS */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #1f2937;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+    border-color:#2563eb;
+}
+
+.section-title {
+    font-size:28px;
+    text-align:center;
+    margin:50px 0 20px;
+    color:white;
+}
+
+.small {
+    color:#9ca3af;
+    text-align:center;
+}
+</style>
+</br>
+<a href="indexkaz.php" style="color:#fff;margin:0 15px;">КАЗ</a>
+<a href="index.php" style="color:#fff;margin:0 15px;">РУС</a>
+<!-- HERO -->
+<section class="hero container">
+
+    <div style="max-width:500px;">
+        <h1>Нөлден бастап сайт жасауды үйрен 🚀</h1>
+        <p>HTML • CSS • JavaScript • PHP — нақты жобаларға негізделген тәжірибелік курс</p>
+
+        <div style="margin-top:20px;">
+            <a href="courses.php"><button class="btn btn-blue">Оқуды бастау</button></a>
+            <a href="upload.php"><button class="btn btn-green">Курс қосу</button></a>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+        style="width:420px;border-radius:12px;">
+    </div>
+
+</section>
+
+<!-- WHAT YOU LEARN -->
+<h2 class="section-title">Сіз не үйренесіз?</h2>
+<p class="small">Бастаушыдан Junior әзірлеушіге дейінгі толық жол</p>
+
+<div class="container grid">
+
+    <div class="card">
+        <h3>HTML</h3>
+        <p>Веб-сайт құрылымы және семантикалық тегтер</p>
+    </div>
+
+    <div class="card">
+        <h3>CSS</h3>
+        <p>Дизайн, бейімделгіштік және анимациялар</p>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript</h3>
+        <p>Логика және интерактивті элементтер</p>
+    </div>
+
+</div>
+
+<!-- COURSE STYLE BLOCK -->
+<h2 class="section-title">Оқу қалай өтеді?</h2>
+
+<div class="container grid">
+
+    <div class="card">
+        <h3>📚 Теория</h3>
+        <p>Қысқа әрі түсінікті түсіндірмелер</p>
+    </div>
+
+    <div class="card">
+        <h3>💻 Практика</h3>
+        <p>Код жазуды бірден бастайсыз</p>
+    </div>
+
+    <div class="card">
+        <h3>🚀 Жобалар</h3>
+        <p>Нақты веб-сайттар жасайсыз</p>
+    </div>
+
+</div>
+
+<!-- CTA -->
+<div class="container" style="text-align:center;margin-top:60px;">
+    <h2>Бастауға дайынсыз ба?</h2>
+    <p class="small">Бізге қосылып, IT саласындағы жолыңызды бастаңыз</p>
+
+    <a href="courses.php">
+        <button class="btn btn-blue">Курстарға өту</button>
+    </a>
+</div>
+<?php include 'footer.php'; ?>
